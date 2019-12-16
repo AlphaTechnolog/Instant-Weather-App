@@ -24,7 +24,10 @@ export class UI {
 			${text}
 		</div>
 		`;
-		document.getElementById('container').insertBefore(element, document.getElementById('row'));
+		
+		document.getElementById('container')
+			.insertBefore(element, document.getElementById('row'));
+
 		element.setAttribute('id', 'alert')
 
 		this.resetForm();
